@@ -18,36 +18,49 @@
 <body>
   
   
-  <nav class="nav-bar">
-    <div class="header-logo">
-      <img src="../assets/shared/desktop/logo.svg" alt="logo-black" class="header-logo-img">
+  <header id="header">
+    <nav class="nav-bar">
+      <div class="header-logo">
+        <img src="../assets/shared/desktop/logo.svg" alt='logo-black' class="header-logo-img"/>
+      </div>
+      <div class="burger">
+        <span></span>
+      </div>
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-link" href='srcs/stories.html'>STORIES</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="srcs/features.html">FEATURES</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="srcs/pricing.html">PRICING</a>
+        </li>
+      </ul>
+      <div class="dark-button-wrap">
+        <button class="dark-button btn-dark">GET AN INVITE</button>
+      </div>
+    </nav>
+  </header>
+  <div class="full-screen-overlay" id="overlay">
+    <div class="mobile-nav" id='mobile-nav'>
+      <ul class="mobile-nav-menu">
+        <li class="mobile-nav-menu-item">
+          <a class="a-mobile-nav-link" href='./srcs/stories.html'>STORIES</a>
+        </li>
+        <li class="mobile-nav-menu-item">
+          <a class="a-mobile-nav-link" href='./srcs/features.html'>FEATURES</a>
+        </li>
+        <li class="mobile-nav-menu-item">
+          <a class="a-mobile-nav-link" href='./srcs/pricing.html'>PRICING</a>
+        </li>
+      </ul>
+      <div class="dark-button-wrap-mobile">
+        <button class="dark-button btn-dark">GET AN INVITE</button>
+      </div>
     </div>
-    <div class="burger">
-      <span></span>
-    </div>
-    <ul class="nav-list">
-      <li class="nav-list-item">
-        <a class="nav-link" href="srcs/stories.html">STORIES</a>
-      </li>
-      <li class="nav-list-item">
-        <a class="nav-link" href="srcs/features.html">FEATURES</a>
-      </li>
-      <li class="nav-list-item">
-        <a class="nav-link" href="srcs/pricing.html">PRICING</a>
-      </li>
-    </ul>
-    <div class="dark-button-wrap">
-      <button class="dark-button">GET AN INVITE</button>
-    </div>
-  </nav>
+  </div>
 
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
   
   <div id="root"></div>
 
