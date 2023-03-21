@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:700');
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:400');
+
+body {
+    font-family: 'DM Sans' sans-serif;
+}
+
+.herotext {
+    padding: 10%;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: bold;
+    
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 25px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+h4 {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.arrowimage {
+    float: right;
+}
+.arrowimageinvert {
+    filter: invert(100%);
+    float: right ;
+}
+
+.heroimage img {
+    width: 100vw;
+}
