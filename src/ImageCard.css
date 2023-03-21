@@ -1,0 +1,58 @@
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    max-height: 375px;
+    color: white;
+}
+
+.image-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 60%;
+    margin-left: 5%;
+}
+
+.image-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.image-artist {
+    margin-bottom: 0;
+    color: lightgray;
+}
+
+.image-body {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.image-story {
+    flex: 1;
+    margin-right: 24px;
+    margin-left: 2%;
+    font-weight: bold;
+}
+
+.image-arrow {
+    width: 24px;
+    height: 24px;
+    margin-right: 8%;
+    filter: invert(1);
+}
+
+
+hr {
+    border-color: white;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
