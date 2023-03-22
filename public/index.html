@@ -20,13 +20,16 @@
 <body>
   <header id="header">
     <nav class="nav-bar">
-      <div class="header-logo">
+     <div class="header-logo">
         <img src="../assets/shared/desktop/logo.svg" alt='logo-black' class="header-logo-img" />
       </div>
       <div class="burger">
         <span></span>
       </div>
       <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-link" href='index.html'>HOME</a>
+        </li>
         <li class="nav-list-item">
           <a class="nav-link" href='stories.html'>STORIES</a>
         </li>
@@ -41,25 +44,30 @@
         <button class="dark-button btn-dark">GET AN INVITE</button>
       </div>
     </nav>
-  </header>
   <div class="full-screen-overlay" id="overlay">
     <div class="mobile-nav" id='mobile-nav'>
       <ul class="mobile-nav-menu">
         <li class="mobile-nav-menu-item">
-          <a class="a-mobile-nav-link" href='./srcs/stories.html'>STORIES</a>
+          <a class="a-mobile-nav-link" href='index.html'>HOME</a>
         </li>
         <li class="mobile-nav-menu-item">
-          <a class="a-mobile-nav-link" href='./srcs/features.html'>FEATURES</a>
+          <a class="a-mobile-nav-link" href='stories.html'>STORIES</a>
+        </li>
+        <li class="mobile-nav-menu-item">
+          <a class="a-mobile-nav-link" href='features.html'>FEATURES</a>
         </li>
         <li class="mobile-nav-menu-item">
           <a class="a-mobile-nav-link" href='pricing.html'>PRICING</a>
         </li>
+        
       </ul>
       <div class="dark-button-wrap-mobile">
         <button class="dark-button btn-dark">GET AN INVITE</button>
       </div>
     </div>
   </div>
+</header>
+
   <div class="herocontainer">
     <div class="heroimage">
       <img src="./assets/home/mobile/create-and-share.jpg" alt="dock">
@@ -146,11 +154,6 @@
       <p>Copyright 2019. All Rights Reserved</p>
     </div>
   </div>
-
-
-
-  
-
   <script src="./navbar.js"></script>
 </body>
 
