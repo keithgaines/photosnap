@@ -19,6 +19,7 @@ h1 {
 h2 {
     font-size: 24px;
     line-height: 25px;
+    font-weight: bold;
 }
 
 h3 {
@@ -53,7 +54,7 @@ p {
     margin: auto;
 }
 
-.container {
+.container, .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,10 +62,67 @@ p {
   padding: 10%;
 }
 
+
 .containerheader {
     margin-top: 25px;
+    font-weight: bold;
 }
 .containerbodytext {
     text-align: center;
     margin-top: 20px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerlogo img {
+    filter: invert(1);
+}
+
+.socialicons {
+    margin-top: 25px;
+    filter: brightness(0) invert(1);
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6%;
+}
+
+.socialicons img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footerlinks ul {
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.footerlinks li {
+    margin-top: 10px;
+}  
+
+.footerlink h3 {
+    margin-right: 40%;
+}
+
+.footerinvite {
+    float: left;
+}
+
+.arrowimageinvert img {
+    float: right;
+    padding-left: 30px;
+    padding-top: 3px;
+}
+
+.copyright {
+    margin-top: 25px;
+    color: lightgray;
 }
