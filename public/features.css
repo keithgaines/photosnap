@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:700');
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:400');
+
+body {
+    font-family: 'DM Sans' sans-serif;
+}
+
+.herotext {
+    padding: 10%;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: bold;
+    
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+h4 {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+  }
+  
+  
+  .containerheader {
+      margin-top: 25px;
+      font-weight: bold;
+  }
+  .containerbodytext {
+      text-align: center;
+      margin-top: 20px;
+  }
+
+  .beta {
+    background-image: url(../assets/shared/mobile/bg-beta.jpg);
+    color: white;
+    padding: 10%;
+    height: 288px;
+}
+
+.arrowimageinvert {
+    filter: invert(1);
+    float: right;
+}
