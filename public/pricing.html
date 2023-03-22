@@ -5,72 +5,213 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+    <!-- Load Bootstrap CSS from CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+
+  <!-- Load Bootstrap JavaScript from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <title>Frontend Mentor | Photosnap Website Challenge</title>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="pricing.css">
+  <link rel="stylesheet" href="footer.css">
 </head>
 <body>
+  <header id="header">
+    <nav class="nav-bar">
+      <div class="header-logo">
+        <img src="../assets/shared/desktop/logo.svg" alt='logo-black' class="header-logo-img" />
+      </div>
+      <div class="burger">
+        <span></span>
+      </div>
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-link" href='srcs/stories.html'>STORIES</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="srcs/features.html">FEATURES</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="pricing.html">PRICING</a>
+        </li>
+      </ul>
+      <div class="dark-button-wrap">
+        <button class="dark-button btn-dark">GET AN INVITE</button>
+      </div>
+    </nav>
+  </header>
+  <div class="full-screen-overlay" id="overlay">
+    <div class="mobile-nav" id='mobile-nav'>
+      <ul class="mobile-nav-menu">
+        <li class="mobile-nav-menu-item">
+          <a class="a-mobile-nav-link" href='./srcs/stories.html'>STORIES</a>
+        </li>
+        <li class="mobile-nav-menu-item">
+          <a class="a-mobile-nav-link" href='./srcs/features.html'>FEATURES</a>
+        </li>
+        <li class="mobile-nav-menu-item">
+          <a class="a-mobile-nav-link" href='pricing.html'>PRICING</a>
+        </li>
+      </ul>
+      <div class="dark-button-wrap-mobile">
+        <button class="dark-button btn-dark">GET AN INVITE</button>
+      </div>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="heroimage">
+      <img src="../assets/pricing/mobile/hero.jpg" alt="sunset">
+    </div>
+    <div class="herotext">
+      <h1>PRICING</h1>
+      <p>Create your stories. Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.</p>
+    </div>
+  </div>
 
-  Stories
-  Features
-  Pricing
-
-  Get an invite
-
-  Pricing
-
-  Create a your stories, Photosnap is a platform for photographers and visual storytellers. 
-  It’s the simple way to create and share your photos.
-
-  Monthly
-  Yearly
-
-  Basic
-  Includes basic usage of our platform. Recommended for new and aspiring photographers.
-  $19.00 per month
-  $190.00 per year
-  Pick Plan
-
-  Pro
-  More advanced features available. Recommended for photography veterans and professionals.
-  $39.00 per month
-  $390.00 per year
-  Pick Plan
-
-  Business
-  Additional features available such as more detailed metrics. Recommended for business owners.
-  $99.00 per month
-  $990.00 per year
-  Pick Plan
-
-  Compare
-
-  The Features
-
-  Basic
-  Pro
-  Business
-
-  Unlimited Story Posting
-  Unlimited Photo Upload
-  Embedding Custom Content
-  Customize Metadata
-  Advanced Metrics
-  Photo Downloads
-  Search Engine Indexing
-  Custom Analytics
-
-  We're in Beta. Get your invite today!
   
-  Get an invite
+  <div class="price">
+    <div class="wrap-price">
+      <div class="button-price">
+        <p id="monthly" class="active">Monthly</p>
+        <div id="card-button-toggler" class="toggle-btn">
+          <div class="inner-circle"></div>
+        </div>
+        <p id="yearly" class="">Yearly</p>
+      </div>
+      <div class="prices-cards">
 
-  Home
-  Stories
-  Features
-  Pricing
+        <div class="price-card">
+          <p>Basic</p>
+          <p>Includes basic usage of our platform. Recommended for new and aspiring photographers.</p>
+          <p class="">$19.00</p>
+          <p class="">per month</p>
+          <p class="">$190.00</p>
+          <p class="">per year</p>
+          <div class="card-button-div">
+            <button class="card-button">PICK PLAN</button>
+          </div>
+        </div>
 
-  Get an invite
+        <div class="price-card black-price-card">
+          <p>Pro</p>
+          <p>More advanced features available. Recommended for photography veterans and professionals.</p>
+          <p class="">$39.00</p>
+          <p class="">per month</p>
+          <p class="">$390.00</p>
+          <p class="">per year</p>
+          <div class="card-button-div">
+            <button class="card-button card-white-button">PICK PLAN</button>
+          </div>
+        </div>
 
-  Copyright 2019. All Rights Reserved
+        <div class="price-card">
+          <p>Business</p>
+          <p>Additional features available such as more detailed metrics. Recommended for business owners.</p>
+          <p class="">$99.00</p>
+          <p class="">per month</p>
+          <p class="">$990.00</p>
+          <p class="">per year</p>
+          <div class="card-button-div">
+            <button class="card-button">PICK PLAN</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="compare">
+      <div class="compare-outer">
+        <h1>COMPARE</h1>
+        <div class="compare-table">
+          <div class="table-row">
+            <div class="col-desc table-col">THE FEATURES</div>
+            <div class="table-col">BASIC</div>
+            <div class="table-col">PRO</div>
+            <div class="table-col">BUSINESS</div>
+          </div>
+          <div class="table-row">
+            <div class="col-desc table-col">UNLIMITED STORY POSTING</div>
+            <div class="table-col checked"></div>
+            <div class="table-col checked"></div>
+            <div class="table-col checked"></div>
+          </div>
+          <div class="table-row">
+            <div class="col-desc table-col">UNLIMITED PHOTO UPLOAD</div>
+            <div class="table-col checked"></div>
+            <div class="table-col checked"></div>
+            <div class="table-col checked"></div>
+          </div>
+          <div class="table-row">
+            <div class="col-desc table-col">EMBEDDING CUSTOM CONTENT</div>
+            <div class="table-col"></div>
+            <div class="table-col checked"></div>
+            <div class="table-col checked"></div>
+          </div>
+          <div class="table-row">
+            <div class="col-desc table-col">CUSTOMIZE METADATA</div>
+            <div class="table-col"></div>
+            <div class="table-col checked"></div>
+            <div class="table-col checked"></div>
+          </div>
+          <div class="table-row">
+            <div class="col-desc table-col">ADVANCED METRICS</div>
+            <div class="table-col"></div>
+            <div class="table-col"></div>
+            <div class="table-col checked"></div>
+          </div>
+          <div class="table-row">
+            <div class="col-desc table-col">PHOTO DOWNLOADS</div>
+            <div class="table-col"></div>
+            <div class="table-col"></div>
+            <div class="table-col checked"></div>
+          </div>
+          <div class="table-row">
+            <div class="col-desc table-col">SEARCH ENGINE</div>
+            <div class="table-col"></div>
+            <div class="table-col"></div>
+            <div class="table-col checked"></div>
+          </div>
+          <div class="table-row">
+            <div class="col-desc table-col">CUSTOM ANALYTICS</div>
+            <div class="table-col"></div>
+            <div class="table-col"></div>
+            <div class="table-col checked"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="beta">
+      <h1>WE'RE IN BETA. GET YOUR INVITE TODAY!</h1>
+      <br /> 
+      <br />
+      <h3>GET AN INVITE <div class="arrowimageinvert"><img src="./assets/shared/desktop/arrow.svg" alt="arrow"></div></h3>
+    </div>
+    </div>
+  <div class="footer">
+    <div class="footerlogo">
+      <img src="../assets/shared/desktop/logo.svg" alt='logo-white' class="header-logo-img" />
+    </div>
+    <div class="socialicons">
+      <span><img src="../assets/shared/desktop/facebook.svg" alt="facebook icon"></span>
+      <span><img src="../assets/shared/desktop/youtube.svg" alt="youtube icon"></span>
+      <span><img src="../assets/shared/desktop/twitter.svg" alt="twitter icon"></span>
+      <span><img src="../assets/shared/desktop/pinterest.svg" alt="pinterest icon"></span>
+      <span><img src="../assets/shared/desktop/instagram.svg" alt="instagram icon"></span>
+    </div>
+    <div class="footerlinks">
+      <ul>
+        <li>Home</li>
+        <li>Stories</li>
+        <li>Features</li>
+        <li>Pricing</li>
+      </ul>
+    </div>
+    <h3>GET AN INVITE <div class="arrowimageinvert"><img src="./assets/shared/desktop/arrow.svg" alt="arrow"></div></h3>
+    <div class="copyright">
+      <p>Copyright 2019. All Rights Reserved</p>
+    </div>
+  </div>
 
+  <script src="./navbar.js"></script>
+  <script src="./pricing.js"></script>
 </body>
 </html>
