@@ -49,7 +49,7 @@ p {
 .herotext p {
     color: lightgray;
 }
-
+ 
 
 
 html, body {
@@ -174,15 +174,7 @@ html, body {
         margin-top: 12px;
     }
 
-    .first-text-side::before {
-        content: '';
-        position: absolute;
-        z-index: 1;
-        top: 294px;
-        left: 12.5%;
-        width: 128px;
-        height: 6px;
-    }
+
 }
 
 #price_compare {
@@ -464,7 +456,7 @@ html, body {
         width: 84.8%;
         height: 6px;
         content: '';
-        bottom: -48%;
+        bottom: -43%;
         position: absolute;
         background-image: linear-gradient(27deg, #FFC593 0%, #BC7198 49%, #5A77FF 95%);
         box-sizing: inherit;
