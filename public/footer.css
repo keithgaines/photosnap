@@ -55,3 +55,52 @@
     margin-top: 25px;
     color: lightgray;
 }
+
+@media screen and (min-width: 768px) {
+
+    .footer {
+        display: flex;
+        position: relative;
+    }
+
+    .footerlogo {
+        width: 90vw;
+    }
+
+    .footerlogo  img {
+        float: left;
+        padding-left: 0;
+    }
+
+    .footer ul {
+        display: inline-flex;
+        position: absolute;
+        color: white;
+        left: 0;
+        bottom: -5%;
+    }
+
+    .footer li {
+        padding-right: 10px;
+    }
+
+    .socialicons {
+        justify-content: left;
+        align-items: left;
+        margin-left: 0;
+        margin-top: 8%;
+    }
+
+    .footerinvite {
+        position: absolute;
+        right: 0;
+        top: 25%
+    }
+
+    .copyright {
+        right: 2%;
+        bottom: 5%;
+        position: absolute;
+    }
+
+    }
