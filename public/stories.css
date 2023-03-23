@@ -112,3 +112,11 @@ hr {
     margin-left: 5vw;
     margin-right: 5vw;
 }
+
+.arrowimageinvert {
+    float: right;
+}
+
+.arrowimageinvert img {
+    filter: invert(1);
+}
