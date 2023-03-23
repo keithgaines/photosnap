@@ -22,7 +22,7 @@
     <nav class="nav-bar">
       <div class="header-logo">
       </div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
         <img src="../assets/shared/desktop/logo.svg" alt='logo-black' class="header-logo-img" />
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
 
@@ -55,29 +55,35 @@
 
   <div class="herocontainer">
     <div class="heroimage">
-      <img src="./assets/home/mobile/create-and-share.jpg" alt="dock">
+      <img srcset="./assets/home/mobile/create-and-share.jpg 375w,
+      ./assets/home/tablet/create-and-share.jpg 768w" 
+      sizes="(max-width: 767px) 375px, 768px"
+      src="./assets/home/mobile/create-and-share.jpg" alt="dock">
     </div>
-    <div class="herotext" style="background-color: black; color: white;">
+    <div class="createandshare" style="background-color: black; color: white;">
       <h1>CREATE AND SHARE YOUR PHOTO STORIES.</h1>
       <p style="color: lightgray;">Photosnap is a platform for photographers and visual storytellers. We make it easy to
         share photos, tell stories and connect with others.</p>
       <h3>GET AN INVITE <div class="arrowimageinvert"><img src="./assets/shared/desktop/arrow.svg" alt="arrow"></div>
       </h3>
     </div>
-    <div class="heroimage">
-      <img src="./assets/home/mobile/beautiful-stories.jpg" alt="desk">
+    <div class="desk">
+      <img srcset="./assets/home/mobile/beautiful-stories.jpg 375w,
+      ./assets/home/tablet/beautiful-stories.jpg 768w" 
+      sizes="(max-width: 767px) 375px, 768px" 
+      src='./assets/home/mobile/beautiful0-stories.jpg' alt="desk">
     </div>
-    <div class="herotext">
+    <div class="beautifulstories">
       <h1>BEAUTIFUL STORIES EVERY TIME</h1>
       <p>We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media
         from other networks. Then share your story with everyone.</p>
       <h3>VIEW THE STORIES <div class="arrowimage"><img src="./assets/shared/desktop/arrow.svg" alt="arrow"></div>
       </h3>
     </div>
-    <div class="heroimage">
+    <div class="manwithcamera">
       <img src="./assets/home/mobile/designed-for-everyone.jpg" alt="man with camera">
     </div>
-    <div class="herotext">
+    <div class="designedforeveryone">
       <h1>DESIGNED FOR EVERYONE</h1>
       <p>Photosnap can help you create stories that resonate with your audience. Our tool is designed for photographers
         of all levels, brands, businesses you name it.</p>

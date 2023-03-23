@@ -13,7 +13,7 @@ h1 {
     font-size: 40px;
     line-height: 48px;
     font-weight: bold;
-    
+
 }
 
 h2 {
@@ -40,9 +40,16 @@ p {
 .arrowimage {
     float: right;
 }
+
 .arrowimageinvert {
     filter: invert(100%);
-    float: right ;
+    float: right;
+}
+
+.createandshare,
+.beautifulstories,
+.designedforeveryone {
+    padding: 10%;
 }
 
 .heroimage img {
@@ -54,12 +61,13 @@ p {
     margin: auto;
 }
 
-.container, .footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10%;
+.container,
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
 }
 
 
@@ -67,8 +75,38 @@ p {
     margin-top: 25px;
     font-weight: bold;
 }
+
 .containerbodytext {
     text-align: center;
     margin-top: 20px;
 }
 
+@media screen and (min-width: 768px) {
+
+    .herocontainer {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .createandshare {
+        grid-row: 1;
+        width: 60vw;
+        padding: 18%;
+        padding-top: 30%;
+    }
+
+    .heroimage img {
+        width: 40vw;
+        height: 100%;
+    }
+
+    .desk {
+        grid-row: 2;
+    }
+
+    .desk img {
+        width: 40vw;
+    }
+
+}
