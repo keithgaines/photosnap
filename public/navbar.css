@@ -1,0 +1,10 @@
+.nav-item {
+    margin-left: 50%;
+    color: black;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-item {
+        margin-left: 25%;
+    }    
+}
