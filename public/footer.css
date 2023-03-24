@@ -42,13 +42,14 @@
 
 .footerinvite {
     float: left;
+    width: 80vw;
 }
 
 .arrowimageinvert img {
     float: right;
     padding-left: 20px;
     padding-top: 3px;
-    margin-right: 50px;
+    margin-right: 20%;
 }
 
 .copyright {
@@ -88,7 +89,7 @@
         justify-content: left;
         align-items: left;
         margin-left: 0;
-        margin-top: 8%;
+        margin-top: 15%;
     }
 
     .footerinvite {
@@ -104,3 +105,21 @@
     }
 
     }
+
+@media screen and (min-width: 1024px) {
+    .socialicons {
+        margin-top: 8%;
+    }
+
+    .footerinvite {
+        float: left;
+        width: 15vw;
+    }
+    
+    .arrowimageinvert img {
+        float: right;
+        padding-left: 20px;
+        padding-top: 3px;
+        margin-right: 20%;
+    }
+}
