@@ -227,7 +227,7 @@ p {
     .beautifulstories {
         padding-top: 0;
         position: absolute;
-        top: 85%;
+        top: 60%;
         right: 15%;
         width: 30vw;
         margin-left: 0;    
@@ -277,4 +277,130 @@ p {
     }
 
     
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.footerlogo img {
+    filter: invert(1);
+}
+
+.socialicons {
+    margin-top: 25px;
+    filter: brightness(0) invert(1);
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6%;
+}
+
+.socialicons img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footerlinks ul {
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.footerlinks li {
+    margin-top: 10px;
+}  
+
+.footerlink h3 {
+    margin-right: 40%;
+}
+
+.footerinvite {
+    float: left;
+    width: 80vw;
+}
+
+.arrowimageinvert img {
+    float: right;
+    padding-left: 20px;
+    padding-top: 3px;
+    margin-right: 20%;
+}
+
+.copyright {
+    margin-top: 25px;
+    color: lightgray;
+}
+
+@media screen and (min-width: 768px) {
+
+    .footer {
+        display: flex;
+        position: relative;
+    }
+
+    .footerlogo {
+        width: 90vw;
+    }
+
+    .footerlogo  img {
+        float: left;
+        padding-left: 0;
+    }
+
+    .footer ul {
+        display: inline-flex;
+        position: absolute;
+        color: white;
+        left: 0;
+        bottom: -5%;
+    }
+
+    .footer li {
+        padding-right: 10px;
+    }
+
+    .socialicons {
+        justify-content: left;
+        align-items: left;
+        margin-left: 0;
+        margin-top: 15%;
+    }
+
+    .footerinvite {
+        position: absolute;
+        right: 0;
+        top: 25%
+    }
+
+    .copyright {
+        right: 2%;
+        bottom: 5%;
+        position: absolute;
+    }
+
+    }
+
+@media screen and (min-width: 1024px) {
+    .socialicons {
+        margin-top: 8%;
+    }
+
+    .footerinvite {
+        float: left;
+        width: 15vw;
+    }
+    
+    .arrowimageinvert img {
+        float: right;
+        padding-left: 20px;
+        padding-top: 3px;
+        margin-right: 20%;
+    }
 }
