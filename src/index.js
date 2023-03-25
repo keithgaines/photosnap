@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <ImageComponent 
         title='The Mountains' 
-        artist='John Appleseeed' 
+        artist='John Appleseed' 
         backgroundImageSrc={'../assets/stories/mobile/mountains.jpg'}
       />
       <ImageComponent 

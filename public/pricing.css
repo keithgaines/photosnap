@@ -119,15 +119,6 @@ html, body {
     margin-top: 21px;
 }
 
-.first-text-side::before {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    left: 0px;
-    width: 6px;
-    height: 144px;
-    background: linear-gradient(26.57deg, #FFC593 0.42%, #BC7198 43.46%, #5A77FF 83.33%);
-}
 
 .picture_side {
     width: 57.54vw;
@@ -137,6 +128,75 @@ html, body {
     background-size: cover;
     background-position: top;
 }
+
+.beta {
+    background-image: url(../assets/shared/mobile/bg-beta.jpg);
+    color: white;
+    padding: 10%;
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+    height: 288px;
+}
+
+.arrowimageinvert {
+    filter: invert(1);
+    float: right;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.footerlogo img {
+    filter: invert(1);
+}
+
+.socialicons {
+    margin-top: 25px;
+    filter: brightness(0) invert(1);
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6%;
+}
+
+.socialicons img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footerlinks ul {
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.footerlinks li {
+    margin-top: 10px;
+}
+
+.footerlink h3 {
+    margin-right: 40%;
+}
+
+.footerinvite {
+    float: left;
+    width: 80vw;
+}
+
+.arrowimageinvert img {
+    float: right;
+    padding-left: 20px;
+    padding-top: 3px;
+    margin-right: 20%;
+}
+
 
 @media screen and (max-width:768px) {
     .first-row {
@@ -452,15 +512,6 @@ html, body {
         height: 25px;
     }
 
-    .black-price-card::before {
-        width: 84.8%;
-        height: 6px;
-        content: '';
-        bottom: -43%;
-        position: absolute;
-        background-image: linear-gradient(27deg, #FFC593 0%, #BC7198 49%, #5A77FF 95%);
-        box-sizing: inherit;
-    }
     
     .price-card p:first-child {
         margin: 56px auto 0px auto;
@@ -493,6 +544,7 @@ html, body {
         max-width: 245px;
         margin: 40px auto 40px auto;
     }
+    
 }
 
 
@@ -583,16 +635,6 @@ html, body {
     align-items: center;
 }
 
-#beta-section::before {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    left: 0px;
-    width: 6px;
-    height: 280px;
-    background: linear-gradient(26.57deg, #FFC593 0.42%, #BC7198 43.46%, #5A77FF 83.33%);
-}
-
 .wrap-beta-text {
     max-width: 1104px;
     height: 144px;
@@ -613,21 +655,21 @@ html, body {
     text-transform: uppercase;
 }
 
-@media screen and (max-width:768px) {
+.heroimage {
+    background-image: url(../assets/pricing/mobile/hero.jpg);
+    width: 100vw;
+    height: 294px;
+}
+
+.herotext {
+    width: 60vw;
+    float: left;
+}
+
+@media screen and (max-width:767px) {
     #beta-section {
         height: 288px;
         background-image: url(../assets/shared/mobile/bg-beta.jpg);
-    }
-    
-    #beta-section::before {
-        content: '';
-        position: absolute;
-        z-index: 1;
-        top: 3151px;
-        left: 9.5%;
-        width: 110px;
-        height: 6px;
-        background: linear-gradient(26.57deg, #FFC593 0.42%, #BC7198 43.46%, #5A77FF 83.33%);
     }
     
     .wrap-beta-text {
@@ -647,4 +689,188 @@ html, body {
     }
 
 
+}
+
+@media screen and (min-width: 768px) {
+    
+    .heroimage {
+        background-image: url(../assets/pricing/tablet/hero.jpg);
+        width: 35vw;
+        float: right;
+        height: 490px;
+        background-repeat: no-repeat;
+        margin-bottom: 10%;
+    }
+
+    .herotext {
+        width: 65vw;
+        float: left;
+        height: 490px;
+        padding: 15%;
+    }
+    
+    .beta {
+    background-image: url(../assets/shared/tablet/bg-beta.jpg);
+    color: white;
+    padding: 10%;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    background-repeat: no-repeat;
+    height: 280px;
+}
+
+.arrowimageinvert {
+    filter: invert(1);
+    float: right;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.footerlogo img {
+    filter: invert(1);
+}
+
+.socialicons {
+    margin-top: 25px;
+    filter: brightness(0) invert(1);
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6%;
+}
+
+.socialicons img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footerlinks ul {
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.footerlinks li {
+    margin-top: 10px;
+}
+
+.footerlink h3 {
+    margin-right: 40%;
+}
+
+.footerinvite {
+    float: left;
+    width: 80vw;
+}
+
+.arrowimageinvert img {
+    float: right;
+    padding-left: 20px;
+    padding-top: 3px;
+    margin-right: 20%;
+}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .heroimage {
+        background-image: url(../assets/pricing/desktop/hero.jpg);
+        width: 50vw;
+        float: right;
+        height: 490px;
+        background-repeat: no-repeat;
+        margin-bottom: 10%;
+    }
+
+    .herotext {
+        width: 50vw;
+        float: left;
+        height: 490px;
+        padding: 10%;
+    }
+
+    .beta {
+        background-image: url(../assets/shared/desktop/bg-beta.jpg);
+        height: 280px;
+        padding: 0;
+        padding-left: 20%;
+        padding-top: 5%;
+    }
+
+    .beta .arrowimageinvert {
+        position: absolute;
+        left: 30%;
+    }
+
+    .beta h3 {
+        float: left;
+    }
+
+    .footer {
+        display: flex;
+        position: relative;
+        text-align: left;
+    }
+
+    .footerlogo {
+        width: 95vw;
+    }
+
+    .footerlogo img {
+        float: left;
+        padding-left: 0;
+        margin-bottom: 11%;
+    }
+
+    .footer ul {
+        display: inline-flex;
+        position: absolute;
+        color: white;
+        left: 0;
+        bottom: 0%;
+    }
+
+    .footer li {
+        padding-right: 10px;
+
+    }
+
+    .socialicons {
+        justify-content: left;
+        align-items: left;
+        margin-left: 0;
+        margin-top: 5%;
+        text-align: left;
+        position: absolute;
+        left: 3%;
+    }
+
+    .footerinvite {
+        position: absolute;
+        right: 0;
+        width: 13vw;
+        justify-content: right;
+    }
+
+    .beta .footerinvite {
+        position: absolute;
+        right: 0;
+        width: 30vw;
+        justify-content: right;
+    }
+
+    .copyright {
+        right: 2%;
+        bottom: 5%;
+        position: absolute;
+    }
 }
