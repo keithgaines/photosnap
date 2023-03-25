@@ -13,7 +13,7 @@ h1 {
     font-size: 40px;
     line-height: 48px;
     font-weight: bold;
-    
+
 }
 
 h2 {
@@ -38,31 +38,321 @@ p {
 }
 
 
+.heroimage {
+    background-image: url(../assets/features/mobile/hero.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 294px;
+}
+
+.herotext {
+    width: 100vw;
+    padding: 15%;
+    padding-left: 5%;
+}
+
+
+
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10%;
-  }
-  
-  
-  .containerheader {
-      margin-top: 25px;
-      font-weight: bold;
-  }
-  .containerbodytext {
-      text-align: center;
-      margin-top: 20px;
-  }
+}
 
-  .beta {
+
+.containerheader {
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.containerbodytext {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.beta {
     background-image: url(../assets/shared/mobile/bg-beta.jpg);
     color: white;
     padding: 10%;
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+    height: 288px;
 }
 
 .arrowimageinvert {
     filter: invert(1);
     float: right;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.footerlogo img {
+    filter: invert(1);
+}
+
+.socialicons {
+    margin-top: 25px;
+    filter: brightness(0) invert(1);
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6%;
+}
+
+.socialicons img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footerlinks ul {
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.footerlinks li {
+    margin-top: 10px;
+}
+
+.footerlink h3 {
+    margin-right: 40%;
+}
+
+.footerinvite {
+    float: left;
+    width: 80vw;
+}
+
+.arrowimageinvert img {
+    float: right;
+    padding-left: 20px;
+    padding-top: 3px;
+    margin-right: 20%;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .heroimage {
+        background-image: url(../assets/features/tablet/hero.jpg);
+        background-repeat: no-repeat;
+        float: right;
+        width: 30vw;
+        height: 490px;
+    }
+
+    .herotext {
+        width: 70vw;
+        padding: 15%;
+        padding-left: 5%;
+        height: 490px;
+    }
+
+    #images-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 650px;
+    }
+
+    .infosection {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    .image-wrapper {
+        max-width: 25%;
+    }
+
+    .image-wrapper {
+        max-width: 50%;
+    }
+
+    .beta {
+        background-image: url(../assets/shared/tablet/bg-beta.jpg);
+        color: white;
+        padding: 10%;
+        height: 280px;
+    }
+
+    .footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }
+
+
+    .footer {
+        display: flex;
+        position: relative;
+        text-align: left;
+    }
+
+    .footerlogo {
+        width: 70vw;
+    }
+
+    .footerlogo img {
+        float: left;
+        padding-left: 0;
+        margin-bottom: 30%;
+    }
+
+    .footer ul {
+        display: inline-flex;
+        position: absolute;
+        color: white;
+        left: 0;
+        bottom: 0%;
+    }
+
+    .footer li {
+        padding-right: 10px;
+
+    }
+
+    .socialicons {
+        justify-content: left;
+        align-items: left;
+        margin-left: 0;
+        margin-top: 10%;
+        text-align: left;
+        position: absolute;
+        left: 3%;
+    }
+
+    .footerinvite {
+        position: absolute;
+        right: 5%;
+        top: 15%
+    }
+
+    .copyright {
+        right: 2%;
+        bottom: 5%;
+        position: absolute;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .heroimage {
+        background-image: url(../assets/features/desktop/hero.jpg);
+        align-content: right;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        height: 490px;
+        width: 55vw;
+    }
+
+    .herotext {
+        width: 45vw;
+        padding-top: 10%;
+        padding-left: 10%;
+    }
+
+    .headerinvite {
+        margin-top: 10%;
+    }
+
+    .infosection {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container {
+        width: 33%;
+    }
+
+    .image-wrapper {
+        max-width: 25%;
+    }
+
+    .beta {
+        background-image: url(../assets/shared/desktop/bg-beta.jpg);
+        height: 280px;
+        padding: 0;
+        padding-left: 20%;
+        padding-top: 5%;
+    }
+
+    .beta .arrowimageinvert {
+        position: absolute;
+        left: 30%;
+    }
+
+    .beta h3 {
+        float: left;
+    }
+
+    .footer {
+        display: flex;
+        position: relative;
+        text-align: left;
+    }
+
+    .footerlogo {
+        width: 70vw;
+    }
+
+    .footerlogo img {
+        float: left;
+        padding-left: 0;
+        margin-bottom: 15%;
+    }
+
+    .footer ul {
+        display: inline-flex;
+        position: absolute;
+        color: white;
+        left: 0;
+        bottom: 0%;
+    }
+
+    .footer li {
+        padding-right: 10px;
+
+    }
+
+    .socialicons {
+        justify-content: left;
+        align-items: left;
+        margin-left: 0;
+        margin-top: 10%;
+        text-align: left;
+        position: absolute;
+        left: 3%;
+    }
+
+    .footerinvite {
+        position: absolute;
+        right: 5%;
+        top: 15%
+    }
+
+    .copyright {
+        right: 2%;
+        bottom: 5%;
+        position: absolute;
+    }
 }

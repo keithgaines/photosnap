@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
   <link rel="stylesheet" href="footer.css">
   <title>Frontend Mentor | Photosnap Website Challenge</title>
 </head>
+
 <body>
   <header id="header">
     <nav class="nav-bar">
@@ -27,9 +29,9 @@
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="nav justify-content-center">
-            <li class="nav-item active">
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
               <a class="nav-link" href="index.html">HOME</a>
             </li>
             <li class="nav-item">
@@ -41,97 +43,106 @@
             <li class="nav-item">
               <a class="nav-link" href="pricing.html">PRICING</a>
             </li>
-            <div class="dark-button-wrap">
-              <button class="dark-button btn-dark">GET AN INVITE</button>
-            </div>
           </ul>
+          <div class="dark-button-wrap">
+            <button class="dark-button btn-dark">GET AN INVITE</button>
+          </div>
         </div>
       </nav>
     </nav>
   </header>
   <div class="herocontainer">
     <div class="heroimage">
-      <img src="./assets/features/mobile/hero.jpg" alt="hero">
+      <img>
     </div>
     <div class="herotext" style="background-color: black; color: white;">
       <h1>FEATURES</h1>
-      <p style="color: lightgray;">We make sure all of our features are designed to be loved by every aspiring and even 
+      <p style="color: lightgray;">We make sure all of our features are designed to be loved by every aspiring and even
         professional photograpers who wanted to share their stories.
       </p>
     </div>
   </div>
-  <div class="container">
-    <div class="containerimage">
-      <img src="../assets/features/desktop/responsive.svg" alt="devices">
+  <div class="infosection">
+    <div class="container">
+      <div class="containerimage">
+        <img src="../assets/features/desktop/responsive.svg" alt="devices">
+      </div>
+      <div class="containerheader">
+        <h2>100% Responsive</h2>
+      </div>
+      <div class="containerbodytext">
+        <p>No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.
+        </p>
+      </div>
     </div>
-    <div class="containerheader">
-      <h2>100% Responsive</h2>
+    <div class="container">
+      <div class="containerimage">
+        <img src="../assets/features/desktop/no-limit.svg" alt="infinity sign">
+      </div>
+      <div class="containerheader">
+        <h2>No Photo Upload Limit</h2>
+      </div>
+      <div class="containerbodytext">
+        <p>Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one
+          go.</p>
+      </div>
     </div>
-    <div class="containerbodytext">
-      <p>No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.</p>
+    <div class="container">
+      <div class="containerimage">
+        <img src="../assets/features/desktop/embed.svg" alt="embed">
+      </div>
+      <div class="containerheader">
+        <h2>Available to Embed</h2>
+      </div>
+      <div class="containerbodytext">
+        <p>Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="containerimage">
+        <img src="../assets/features/desktop/custom-domain.svg" alt="domain">
+      </div>
+      <div class="containerheader">
+        <h2>Custom Domain</h2>
+      </div>
+      <div class="containerbodytext">
+        <p>With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding!
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="containerimage">
+        <img src="../assets/features/desktop/boost-exposure.svg" alt="boost">
+      </div>
+      <div class="containerheader">
+        <h2>Boost Your Exposure</h2>
+      </div>
+      <div class="containerbodytext">
+        <p>Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in
+          mailing list.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="containerimage">
+        <img src="../assets/features/desktop/drag-drop.svg" alt="drag-drop">
+      </div>
+      <div class="containerheader">
+        <h2>Drag & Drop Image</h2>
+      </div>
+      <div class="containerbodytext">
+        <p>Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to
+          creating stories.</p>
+      </div>
     </div>
   </div>
-  <div class="container">
-    <div class="containerimage">
-      <img src="../assets/features/desktop/no-limit.svg" alt="infinity sign">
-    </div>
-    <div class="containerheader">
-      <h2>No Photo Upload Limit</h2>
-    </div>
-    <div class="containerbodytext">
-      <p>Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.</p>
-    </div>
-  </div>
-  <div class="container">
-    <div class="containerimage">
-      <img src="../assets/features/desktop/embed.svg" alt="embed">
-    </div>
-    <div class="containerheader">
-      <h2>Available to Embed</h2>
-    </div>
-    <div class="containerbodytext">
-      <p>Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more.</p>
-    </div>
-  </div>
-  <div class="container">
-    <div class="containerimage">
-      <img src="../assets/features/desktop/custom-domain.svg" alt="domain">
-    </div>
-    <div class="containerheader">
-      <h2>Custom Domain</h2>
-    </div>
-    <div class="containerbodytext">
-      <p>With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding!</p>
-    </div>
-  </div>
-  <div class="container">
-    <div class="containerimage">
-      <img src="../assets/features/desktop/boost-exposure.svg" alt="boost">
-    </div>
-    <div class="containerheader">
-      <h2>Boost Your Exposure</h2>
-    </div>
-    <div class="containerbodytext">
-      <p>Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in mailing list.</p>
-    </div>
-  </div>
-  <div class="container">
-    <div class="containerimage">
-      <img src="../assets/features/desktop/drag-drop.svg" alt="drag-drop">
-    </div>
-    <div class="containerheader">
-      <h2>Drag & Drop Image</h2>
-    </div>
-    <div class="containerbodytext">
-      <p>Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories.</p>
-    </div>
-  </div>
-
   <div class="beta">
     <h1>WE'RE IN BETA. GET YOUR INVITE TODAY!</h1>
-    <br /> 
     <br />
-    <h3>GET AN INVITE <div class="arrowimageinvert"><img src="./assets/shared/desktop/arrow.svg" alt="arrow"></div></h3>
+    <br />
+    <div>
+      <h3>GET AN INVITE <span class="arrowimageinvert"><img src="./assets/shared/desktop/arrow.svg" alt="arrow"></span>
+      </h3>
+    </div>
   </div>
   </div>
   <div class="footer">
@@ -153,7 +164,8 @@
         <li>Pricing</li>
       </ul>
     </div>
-    <h3>GET AN INVITE <div class="arrowimageinvert"><img src="./assets/shared/desktop/arrow.svg" alt="arrow"></div></h3>
+    <h3>GET AN INVITE <div class="arrowimageinvert"><img src="./assets/shared/desktop/arrow.svg" alt="arrow"></div>
+    </h3>
     <div class="copyright">
       <p>Copyright 2019. All Rights Reserved</p>
     </div>
@@ -168,4 +180,5 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 </body>
+
 </html>

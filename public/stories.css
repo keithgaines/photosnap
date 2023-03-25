@@ -159,99 +159,6 @@ hr {
 
 }
 
-@media  screen and (min-width: 1024px) {
-    
-    .herotext {
-        display: none;
-    }
-    
-    .heroimage {
-        background-image: url(../assets/stories/desktop/moon-of-appalacia.jpg);
-        align-content: right;
-        background-repeat: no-repeat;
-        object-fit: cover;
-        height: 650px;
-        width: 100vw;
-    }
-
-    .headerinvite {
-        margin-top: 10%;
-    }
-
-    .desk {
-        background-image: url(../assets/home/desktop/beautiful-stories.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    .manwithcamera {
-        background-image: url(../assets/home/desktop/designed-for-everyone.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .createandshare,
-    .designedforeveryone {
-        width: 40vw;
-        padding: 20%;
-        padding-top: 15%;
-    }
-
-    .beautifulstories {
-        padding-top: 0;
-        position: absolute;
-        top: 60%;
-        right: 15%;
-        width: 30vw;
-        margin-left: 0;    
-    }
-
-
-    .createandshare {
-        grid-row: 1;
-    }
-
-    .heroimage img,
-    .manwithcamera img {
-        width: 25%;
-        padding-bottom: 0;
-    }
-
-    .desk {
-        grid-row: 2;
-        width: 130%;
-    }
-
-    .designedforeveryone {
-        grid-row: 3;
-    }
-
-    .manwithcamera {
-        grid-row: 3;
-    }
-
-    #root {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .infosection {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .container {
-        width: 33%;
-    }
-
-    .image-wrapper {
-        max-width: 25%;
-    }
-
-    
-}
-
 .footer {
     background-color: black;
     color: white;
@@ -311,6 +218,10 @@ hr {
     color: lightgray;
 }
 
+
+
+
+
 @media screen and (min-width: 768px) {
 
     .footer {
@@ -366,56 +277,145 @@ hr {
 
     }
 
-@media screen and (min-width: 1024px) {
-    .footer {
-        display: flex;
-        position: relative;
-        text-align: left;
+    @media  screen and (min-width: 1024px) {
+    
+        .herotext {
+            display: none;
+        }
+        
+        .heroimage {
+            background-image: url(../assets/stories/desktop/moon-of-appalacia.jpg);
+            align-content: right;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            height: 650px;
+            width: 100vw;
+        }
+    
+        .headerinvite {
+            margin-top: 10%;
+        }
+    
+        .desk {
+            background-image: url(../assets/home/desktop/beautiful-stories.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    
+        .manwithcamera {
+            background-image: url(../assets/home/desktop/designed-for-everyone.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    
+        .createandshare,
+        .designedforeveryone {
+            width: 40vw;
+            padding: 20%;
+            padding-top: 15%;
+        }
+    
+        .beautifulstories {
+            padding-top: 0;
+            position: absolute;
+            top: 60%;
+            right: 15%;
+            width: 30vw;
+            margin-left: 0;    
+        }
+    
+    
+        .createandshare {
+            grid-row: 1;
+        }
+    
+        .heroimage img,
+        .manwithcamera img {
+            width: 25%;
+            padding-bottom: 0;
+        }
+    
+        .desk {
+            grid-row: 2;
+            width: 130%;
+        }
+    
+        .designedforeveryone {
+            grid-row: 3;
+        }
+    
+        .manwithcamera {
+            grid-row: 3;
+        }
+    
+        #root {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    
+        .infosection {
+            display: flex;
+            flex-direction: row;
+        }
+    
+        .container {
+            width: 33%;
+        }
+    
+        .image-wrapper {
+            max-width: 25%;
+        }
+        .footer {
+            display: flex;
+            position: relative;
+            text-align: left;
+        }
+    
+        .footerlogo {
+            width: 70vw;
+        }
+    
+        .footerlogo  img {
+            float: left;
+            padding-left: 0;
+            margin-bottom: 15%;
+        }
+    
+        .footer ul {
+            display: inline-flex;
+            position: absolute;
+            color: white;
+            left: 0;
+            bottom: 0%;
+        }
+    
+        .footer li {
+            padding-right: 10px;
+    
+        }
+    
+        .socialicons {
+            justify-content: left;
+            align-items: left;
+            margin-left: 0;
+            margin-top: 10%;
+            text-align: left;
+            position: absolute;
+            left: 3%;
+        }
+    
+        .footerinvite {
+            position: absolute;
+            right: 5%;
+            top: 15%
+        }
+    
+        .copyright {
+            right: 2%;
+            bottom: 5%;
+            position: absolute;
+        }
+        
     }
 
-    .footerlogo {
-        width: 70vw;
-    }
-
-    .footerlogo  img {
-        float: left;
-        padding-left: 0;
-        margin-bottom: 15%;
-    }
-
-    .footer ul {
-        display: inline-flex;
-        position: absolute;
-        color: white;
-        left: 0;
-        bottom: 0%;
-    }
-
-    .footer li {
-        padding-right: 10px;
-
-    }
-
-    .socialicons {
-        justify-content: left;
-        align-items: left;
-        margin-left: 0;
-        margin-top: 10%;
-        text-align: left;
-        position: absolute;
-        left: 3%;
-    }
-
-    .footerinvite {
-        position: absolute;
-        right: 5%;
-        top: 15%
-    }
-
-    .copyright {
-        right: 2%;
-        bottom: 5%;
-        position: absolute;
-    }
-
-    }
