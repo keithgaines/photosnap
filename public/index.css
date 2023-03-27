@@ -3,6 +3,8 @@
 
 body {
     font-family: 'DM Sans' sans-serif;
+    overflow-x: hidden;
+
 }
 
 .herotext {
@@ -70,6 +72,72 @@ p {
     margin-top: 20px;
 }
 
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footerlogo img {
+    filter: invert(1);
+}
+
+.socialicons {
+    margin-top: 25px;
+    filter: brightness(0) invert(1);
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6%;
+}
+
+.socialicons img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footerlinks ul {
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.footerlinks li {
+    margin-top: 10px;
+}  
+
+.footerlink h3 {
+    margin-right: 40%;
+}
+
+.footerinvite {
+    float: left;
+    width: 100vw;
+    margin-bottom: 20px;
+}
+
+.arrowimageinvert img {
+    float: right;
+    padding-left: 20px;
+    padding-top: 3px;
+    margin-right: 20%;
+}
+
+.copyright {
+    margin-top: 25px;
+    color: lightgray;
+}
+
 @media screen and (max-width: 767px) {
     .createandshare,
     .beautifulstories,
@@ -98,6 +166,9 @@ p {
 
     .heroimage {
         background-image: url(../assets/home/mobile/create-and-share.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
     }
 
     .desk {
@@ -198,8 +269,8 @@ p {
         background-image: url(../assets/home/desktop/create-and-share.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        width: 65vw;
-    }
+        width: 60vw;
+        }
 
     .headerinvite {
         margin-top: 10%;
@@ -207,29 +278,32 @@ p {
 
     .desk {
         background-image: url(../assets/home/desktop/beautiful-stories.jpg);
-        background-size: contain;
         background-repeat: no-repeat;
+        background-size: cover;
+        width: 60vw;
     }
 
     .manwithcamera {
         background-image: url(../assets/home/desktop/designed-for-everyone.jpg);
-        background-size: cover;
         background-repeat: no-repeat;
+        background-size: cover;
+        width: 60vw;
     }
 
     .createandshare,
     .designedforeveryone {
-        width: 40vw;
         padding: 20%;
         padding-top: 15%;
+        height: 600px;
+        width: 40vw;
     }
 
     .beautifulstories {
         padding-top: 0;
         position: absolute;
-        top: 60%;
-        right: 15%;
-        width: 30vw;
+        top: 900px;
+        right: 80px;
+        width: 40vw;
         margin-left: 0;    
     }
 
@@ -240,7 +314,7 @@ p {
 
     .heroimage img,
     .manwithcamera img {
-        width: 25%;
+        width: 20vw;
         padding-bottom: 0;
     }
 
@@ -279,70 +353,6 @@ p {
     
 }
 
-.footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 25px;
-}
-
-.footer a {
-    color: white;
-    text-decoration: none;
-}
-
-.footerlogo img {
-    filter: invert(1);
-}
-
-.socialicons {
-    margin-top: 25px;
-    filter: brightness(0) invert(1);
-    margin-left: 10%;
-    justify-content: center;
-    align-items: center;
-    margin-right: 6%;
-}
-
-.socialicons img {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.footerlinks ul {
-    list-style: none;
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
-
-.footerlinks li {
-    margin-top: 10px;
-}  
-
-.footerlink h3 {
-    margin-right: 40%;
-}
-
-.footerinvite {
-    float: left;
-    width: 100vw;
-    margin-bottom: 20px;
-}
-
-.arrowimageinvert img {
-    float: right;
-    padding-left: 20px;
-    padding-top: 3px;
-    margin-right: 20%;
-}
-
-.copyright {
-    margin-top: 25px;
-    color: lightgray;
-}
 
 @media screen and (min-width: 768px) {
 
