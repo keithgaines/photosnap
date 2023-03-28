@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Frontend Mentor - Photosnap Website solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Photosnap Website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/photosnap-multipage-website-nMDSrNmNW). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
 
-### `npm start`
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### The challenge
 
-### `npm test`
+Users should be able to:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- View the optimal layout for each page depending on their device's screen size
+- See hover states for all interactive elements throughout the site
 
-### `npm run build`
+### Screenshot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![](./screenshot.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Links
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Solution URL: [https://www.frontendmentor.io/solutions/photosnap-reactbootstrap-Jcve3Ah2gz]
+- Live Site URL: [https://photosnap-delta.vercel.app/]
 
-### `npm run eject`
+## My process
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Built with
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Bootstrap
+- Vanilla JS
+- [React](https://reactjs.org/) - JS library
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### What I learned
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+One thing I have learned is how to use a loop in vanilla JS to add content to the DOM. Initially, I intended to use React to code the Stories page, but I faced difficulties in exporting the component to both the homepage and Stories page. As a result, the homepage image section uses React, while the Stories image section employs the vanilla JS code below.
 
-## Learn More
+```imageData.forEach(imageData => {
+  const imageWrapper = document.createElement('div');
+  imageWrapper.classList.add('image-wrapper');
+  imageWrapper.style.backgroundImage = `url(${imageData.backgroundImageSrc})`;
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  const imageInfo = document.createElement('div');
+  imageInfo.classList.add('image-info');
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  const imageDate = document.createElement('div');
+  imageDate.classList.add('image-date');
+  imageDate.textContent = imageData.date;
 
-### Code Splitting
+  const imageTitle = document.createElement('h3');
+  imageTitle.classList.add('image-title');
+  imageTitle.textContent = imageData.title;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  const imageArtist = document.createElement('p');
+  imageArtist.classList.add('image-artist');
+  imageArtist.textContent = `by ${imageData.artist}`;
 
-### Analyzing the Bundle Size
+  const hr = document.createElement('hr');
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  const imageBody = document.createElement('div');
+  imageBody.classList.add('image-body');
 
-### Making a Progressive Web App
+  const readStory = document.createElement('p');
+  readStory.classList.add('image-story');
+  readStory.textContent = 'READ STORY';
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+  const imageArrow = document.createElement('img');
+  imageArrow.classList.add('image-arrow');
+  imageArrow.src = '../assets/shared/desktop/arrow.svg';
+  imageArrow.alt = 'arrow';
+  imageArrow.setAttribute('preserveAspectRatio', 'none');
+```
 
-### Advanced Configuration
+### Continued development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+My goal is to further develop my skills in JavaScript to create a strong foundation for expanding into TypeScript. By working with JavaScript on a regular basis, I hope to strengthen my understanding of essential concepts and apply them in practical applications. My plan is to also explore JavaScript frameworks such as React, Angular, and Vue.js to develop more complex web applications. Additionally, I am interested in learning server-side JavaScript frameworks such as Node.js and Express.js to create scalable and efficient server-side applications. With continued learning and practice, I am confident in my ability to grow as a web developer and take on more challenging projects.
+## Author
 
-### Deployment
+- Website - [Keith Gaines](https://keithgaines.github.io)
+- Frontend Mentor - [@keithgaines](https://www.frontendmentor.io/profile/keithgaines)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

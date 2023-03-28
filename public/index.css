@@ -204,7 +204,7 @@ p {
         background-image: url(../assets/home/desktop/create-and-share.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        width: 60vw;
+        width: 59vw;
         }
 
     .headerinvite {
@@ -222,7 +222,7 @@ p {
         background-image: url(../assets/home/desktop/designed-for-everyone.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        width: 60vw;
+        width: 59vw;
     }
 
     .createandshare,
@@ -249,7 +249,7 @@ p {
 
     .heroimage img,
     .manwithcamera img {
-        width: 20vw;
+        width: 10vw;
         padding-bottom: 0;
     }
 
