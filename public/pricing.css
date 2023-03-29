@@ -3,10 +3,13 @@
 
 body {
     font-family: 'DM Sans' sans-serif;
+    overflow-x: hidden;
+
 }
 
 .herotext {
     padding: 10%;
+    width: 100%;
 }
 
 h1 {
@@ -132,6 +135,7 @@ body {
 
 .beta {
     background-image: url(../assets/shared/mobile/bg-beta.jpg);
+    background-size: cover;
     color: white;
     padding: 10%;
     margin-bottom: 0;
@@ -146,6 +150,10 @@ body {
 
 
 @media screen and (max-width:768px) {
+
+    .herotext {
+        width: 100vw;
+    }
     .first-row {
         flex-direction: column-reverse !important;
     }
@@ -153,6 +161,7 @@ body {
     .picture_side {
         background-image: url(../assets/pricing/mobile/hero.jpg);
         background-position: center;
+        background-size: cover;
         height: 294px;
         width: 100%;
     }
@@ -610,14 +619,11 @@ body {
 
 .heroimage {
     background-image: url(../assets/pricing/mobile/hero.jpg);
+    background-size: cover;
     width: 100vw;
     height: 294px;
 }
 
-.herotext {
-    width: 60vw;
-    float: left;
-}
 
 @media screen and (max-width:767px) {
     #beta-section {

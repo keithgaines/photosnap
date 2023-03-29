@@ -3,6 +3,7 @@
 
 body {
     font-family: 'DM Sans' sans-serif;
+    overflow-x: hidden;
 }
 
 .herotext {
@@ -41,6 +42,7 @@ p {
 .heroimage {
     background-image: url(../assets/features/mobile/hero.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100vw;
     height: 294px;
 }
@@ -74,6 +76,7 @@ p {
 
 .beta {
     background-image: url(../assets/shared/mobile/bg-beta.jpg);
+    background-size: cover;
     color: white;
     padding: 10%;
     margin-bottom: 0;
