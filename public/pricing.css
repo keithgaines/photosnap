@@ -682,22 +682,23 @@ body {
 
     .heroimage {
         background-image: url(../assets/pricing/desktop/hero.jpg);
-        width: 50vw;
-        float: right;
+        background-size: cover;
+        width: 40vw;
         height: 490px;
         background-repeat: no-repeat;
         margin-bottom: 10%;
     }
 
     .herotext {
-        width: 50vw;
         float: left;
+        width: 59vw;
         height: 490px;
         padding: 10%;
     }
 
     .beta {
         background-image: url(../assets/shared/desktop/bg-beta.jpg);
+        background-size: cover;
         height: 280px;
         padding: 0;
         padding-left: 20%;
