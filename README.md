@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/photosnap-reactbootstrap-Jcve3Ah2gz]
-- Live Site URL: [https://photosnap-delta.vercel.app/]
+- Solution URL: https://www.frontendmentor.io/solutions/photosnap-reactbootstrap-Jcve3Ah2gz
+- Live Site URL: https://photosnap-delta.vercel.app/
 
 ## My process
 
